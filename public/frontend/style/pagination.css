@@ -1,0 +1,15 @@
+.pagination>li>a { border-radius: 30% !important;margin: 0 5px;}
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #012102 !important;
+  border-color: #012102 !important;
+}
+.page-link {
+    color: #012102;
+}
+
+.pagination {
+  justify-content: center;
+}
