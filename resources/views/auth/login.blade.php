@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
     <div class="container">
         <input type="checkbox" id="flip">
@@ -51,28 +50,23 @@
         </div>
     </div>
     <script>
-        @if(session()->has('success'))
-
-        Swal.fire({
-            icon: 'success',
-            title: 'BERHASIL!',
-            text: '{{ session('success') }}',
-            showConfirmButton: false,
-            timer: 3000
-        })
-
-        @elseif(session()->has('error'))
-
-        Swal.fire({
-            icon: 'error',
-            title: 'GAGAL!',
-            text: '{{ session('error') }}',
-            showConfirmButton: false,
-            timer: 10000
-        })
-
+        @if (session()->has('success'))
+            Swal.fire({
+                icon: 'success',
+                title: 'BERHASIL!',
+                text: '{{ session('success') }}',
+                showConfirmButton: false,
+                timer: 3000
+            })
+        @elseif (session()->has('error'))
+            Swal.fire({
+                icon: 'error',
+                title: 'GAGAL!',
+                text: '{{ session('error') }}',
+                showConfirmButton: false,
+                timer: 10000
+            })
         @endif
     </script>
 </body>
-
 </html>

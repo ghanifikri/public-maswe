@@ -14,8 +14,8 @@
         <form autocomplete="off" action="{{ route('dashboard-login') }}" method="POST">
           @csrf
           <div class="field">
-            <span class="fa fa-user"></span>
-            <input type="email" name="email"   required placeholder="Email">
+            <span class="fa fa-user" ></span>
+            <input type="email" name="email" style="border-radius: 10px;"  required placeholder="Email">
           </div>
           <div class="field space">
             <span class="fa fa-lock"></span>
