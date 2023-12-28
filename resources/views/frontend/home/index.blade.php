@@ -26,7 +26,6 @@
 @endsection
 
 @section('content')
-
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
         @forelse ($abouts as $about)
@@ -117,7 +116,9 @@
                 @endforelse
             </div>
         </div>
-    </section><!-- End Recent news Posts Section -->
+    </section>
+
+    <!-- End Recent news Posts Section -->
 
     <section id="banner" class="d-flex flex-column justify-content-center"
         style=" background: url('{{ asset($aboutKaligandu->background) }}') top center; background-size:cover;background-position:center">
@@ -133,7 +134,6 @@
             </div>
         </div>
     </section>
-
 @endsection
 @section('js')
     <script src="{{ asset('frontend/library/glightbox/js/glightbox.min.js') }}"></script>

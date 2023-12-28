@@ -85,9 +85,9 @@ section {
 .login-btn {
   margin-left: 22px;
   margin-right: 22px;
-  background: #f6b024;
+  background: rgb(26, 55, 27);
   color: #fff;
-  border-radius: 50px;
+  border-radius: 8px;
   padding: 8px 25px;
   white-space: nowrap;
   transition: 0.3s;

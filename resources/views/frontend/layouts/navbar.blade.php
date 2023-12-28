@@ -63,7 +63,7 @@
         @endauth
         @guest
             <div class="d-flex">
-                <a href="{{ route('frontend.login') }}" class="login-btn px-5 py-2">LOGIN</a>
+                <a href="{{ route('frontend.login') }}" class="login-btn px-3 py-2">↳ LOGIN</a>
             </div>
             <i class="bi bi-list mobile-nav-toggle"></i>
         @endguest

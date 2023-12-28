@@ -15,7 +15,7 @@
           @csrf
           <div class="field">
             <span class="fa fa-user" ></span>
-            <input type="email" name="email" style="border-radius: 10px;"  required placeholder="Email">
+            <input type="email" name="email"  required placeholder="Email">
           </div>
           <div class="field space">
             <span class="fa fa-lock"></span>
@@ -25,13 +25,13 @@
             <a href="#">Forgot Password?</a>
           </div>
           <div class="field">
-            <input type="submit" value="LOGIN">
+            <input style="border-radius: 8px;" type="submit" value="LogIn">
           </div>
         </form>
         <div class="login">Or login with</div>
         <div class="links">
           <div class="google">
-            <a href="{{ route('user.login.google') }}" style="color:#fff"><i class="fab fa-google"><span>Google</span></i></a>
+            <a href="{{ route('user.login.google') }}" style="color:#fff;"><i class="fab fa-google"><span>Google</span></i></a>
           </div>
         </div>
         <div class="signup">Don't have account?

@@ -25,14 +25,16 @@
                 </div>
                 <div class="field space">
                     <span class="fa fa-lock"></span>
-                    <input id="password" type="password" name="password" class="pass-key" required placeholder="Password">
+                    <input id="password" type="password" name="password" class="pass-key" required
+                        placeholder="Password">
                 </div>
                 <div class="field space">
                     <span class="fa fa-lock"></span>
-                    <input id="password_confirmation" type="password" class="pass-key1" name="password_confirmation" required placeholder="Confirm Password">
+                    <input id="password_confirmation" type="password" class="pass-key1" name="password_confirmation"
+                        required placeholder="Confirm Password">
                 </div>
                 <div class="field space">
-                    <input type="submit" value="REGISTER">
+                    <input style="border-radius: 8px;" type="submit" value="Register">
                 </div>
             </form>
             <div class="login">Or sign up with</div>

@@ -26,8 +26,9 @@
   left: 50%;
   z-index: 999;
   text-align: center;
-  padding: 60px 32px;
-  width: 370px;
+  padding: 60px 40px;
+  width: 400px;
+  border-radius: 16px;
   transform: translate(-50%,-50%);
   background: rgba(255,255,255,0.04);
   box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
@@ -136,6 +137,7 @@
   height: 45px;
   line-height: 45px;
   margin-left: 10px;
+  border-radius: 8px;
 }
 .google{
   margin-left: 0;

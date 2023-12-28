@@ -18,8 +18,6 @@
 </head>
 
 <body>
-
-
     @include('frontend.layouts.navbar')
     <!-- ======= Hero Section ======= -->
     @yield('hero')
@@ -37,11 +35,9 @@
                         <img src="{{ asset('frontend/img/logo_footer.svg') }}" alt="">
                     </div>
                     <div class="col-lg-4">
-                        <div class="">
-                            <div class="button-top">
-                                <a href="#" class="button-order">ORDER NOW</a>
-                                <a href="#" class="button-contact">CONTACT US</a>
-                            </div>
+                        <div class="button-top">
+                            <a href="#" class="button-order">ORDER NOW</a>
+                            <a href="#" class="button-contact">CONTACT US</a>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -63,11 +59,9 @@
                 <div class="solid"></div>
             </div>
         </div>
-
         <div class="footer-top">
             <div class="container">
                 <div class="row">
-
                     <div class="col-lg-4 col-md-12 col-12 footer-contact">
                         <h4>MASWE FARMHOUSE</h4>
                         <p>
@@ -85,7 +79,6 @@
                             <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
                         </div>
                     </div>
-
                     <div class="col-lg-4 col-md-6 col-6 footer-links">
                         <h4>Useful Links</h4>
                         <ul>
@@ -96,7 +89,6 @@
                             <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
                         </ul>
                     </div>
-
                     <div class="col-lg-4 col-md-6 col-6 footer-links">
                         <h4>Our Services</h4>
                         <ul>
@@ -110,7 +102,6 @@
                 </div>
             </div>
         </div>
-
         <div class="container">
             <div class="copyright">
                 &copy; Copyright <strong><span>Maswe Farmhouse</span></strong>. All Rights Reserved
@@ -122,7 +113,6 @@
     <script src="{{ asset('frontend/js/main.js') }}"></script>
     <script>
         @if (session()->has('success'))
-
             Swal.fire({
                 icon: 'success',
                 title: 'BERHASIL!',
@@ -131,7 +121,6 @@
                 timer: 3000
             })
         @elseif (session()->has('error'))
-
             Swal.fire({
                 icon: 'error',
                 text: 'GAGAL!',
