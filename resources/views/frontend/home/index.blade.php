@@ -55,7 +55,6 @@
                             quam. Natus enim corporis sint?</p>
                     </div>
                 </div>
-
             </div>
         @endforelse
     </section><!-- End About Section -->
