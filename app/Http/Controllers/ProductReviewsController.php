@@ -1,7 +1,5 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use App\Models\Product_reviews;
 use App\Http\Requests\StoreProduct_reviewsRequest;
 use App\Http\Requests\UpdateProduct_reviewsRequest;
@@ -19,7 +17,6 @@ class ProductReviewsController extends Controller
     {
         //
     }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -29,7 +26,6 @@ class ProductReviewsController extends Controller
     {
         //
     }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -45,7 +41,7 @@ class ProductReviewsController extends Controller
         $product_id = Product_reviews::where('product_id', $product)->count();
 
         if ($user_id && $product_id > 0) {
-            return redirect()->back()->with('error','kamu sudah melakukan review');
+            return redirect()->back()->with('error', 'kamu sudah melakukan review');
         } else {
             Product_reviews::create([
                 'user_id' => Auth::user()->id,
@@ -54,11 +50,9 @@ class ProductReviewsController extends Controller
                 'review' => $request->review,
                 'rate' => $request->rate
             ]);
-
             return redirect()->back()->with(['success' => 'Thank You!']);
         }
     }
-
     /**
      * Display the specified resource.
      *
@@ -69,7 +63,6 @@ class ProductReviewsController extends Controller
     {
         //
     }
-
     /**
      * Show the form for editing the specified resource.
      *
@@ -80,7 +73,6 @@ class ProductReviewsController extends Controller
     {
         //
     }
-
     /**
      * Update the specified resource in storage.
      *
@@ -92,7 +84,6 @@ class ProductReviewsController extends Controller
     {
         //
     }
-
     /**
      * Remove the specified resource from storage.
      *

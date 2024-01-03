@@ -49,9 +49,7 @@
                 </header>
                 <div class="row justify-content-center">
                     <div class="col-lg-8 content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore excepturi quis ut obcaecati esse
-                            minima totam recusandae facere temporibus, autem dolores, voluptate inventore mollitia voluptas
-                            quam. Natus enim corporis sint?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore excepturi quis ut obcaecati esse minima totam recusandae facere temporibus, autem dolores, voluptate inventore mollitia voluptas quam. Natus enim corporis sint?</p>
                     </div>
                 </div>
             </div>
@@ -91,7 +89,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="post-box">
-                            <div class="post-img"><img src="{{ asset('frontend/img/values-2.png') }}" class="img-fluid"
+                            <div class="post-img"><img src="{{ asset('frontend/img/values-2.png') }}"class="img-fluid"
                                     alt="">
                             </div>
                             <span class="post-date">Fri, August 28</span>
@@ -115,9 +113,7 @@
             </div>
         </div>
     </section>
-
     <!-- End Recent news Posts Section -->
-
     <section id="banner" class="d-flex flex-column justify-content-center"
         style=" background: url('{{ asset($aboutKaligandu->background) }}') top center; background-size:cover;background-position:center">
         <div class="container">

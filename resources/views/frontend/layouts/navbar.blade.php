@@ -1,12 +1,10 @@
 <!-- ======= Header ======= -->
 <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
-
         <!-- <h1 class="logo"><a href="index.html">DevFolio</a></h1> -->
         <!-- Uncomment below if you prefer to use an image logo -->
         <a href="{{ route('home') }}" class="logo mr-auto"><img src="{{ asset('frontend/img/logo3.png') }}" alt=""
                 class="img-fluid"></a>
-
         <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
                 <li><a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="{{ route('home') }}">Home</a></li>
@@ -46,7 +44,6 @@
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
         @auth
-
             <div class="d-flex">
                 <a href="{{ route('cart') }}" class="single-icon">
                     <i class='ri-shopping-bag-line'></i>
@@ -63,7 +60,7 @@
         @endauth
         @guest
             <div class="d-flex">
-                <a href="{{ route('frontend.login') }}" class="login-btn px-3 py-2">↳ LOGIN</a>
+                <a href="{{ route('frontend.login') }}" class="login-btn px-3 py-2"><b>LOGIN</b></a>
             </div>
             <i class="bi bi-list mobile-nav-toggle"></i>
         @endguest
