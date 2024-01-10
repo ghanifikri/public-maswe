@@ -75,9 +75,11 @@ section {
 }
 
 #header.header-scrolled {
-  background: #012102;
+  background: #012102e0;
   padding: 12px 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Horizontal offset, vertical offset, blur radius, spread radius, color */
 }
+
 
 /**
 * Get Startet Button 
