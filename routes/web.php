@@ -124,7 +124,7 @@ Route::group(['prefix' => 'news'], function () {
 Route::get('/kontak', [KontakController::class, 'index'])->name('kontak');
 Route::post('/kontak/post', [KontakController::class, 'store'])->name('kontak.store');
 Route::get('/kontak/show/{id}', [KontakController::class, 'show'])->name('kontak.show');
-Route::get('/kontak/five', [KontakController::class, 'messageVife'])->name('kontak.messageVife');
+Route::get('/kontak/five', [KontakController::class, 'messageFive'])->name('kontak.messageFive');
 
 /* -------------------------------------------------------------------------- */
 /*                              Admin Route Group                             */
